@@ -3,9 +3,9 @@ using namespace pandemic;
 using namespace std;
 
 Player& Medic::treat(City c){
-if(c==_c){
-    throw out_of_range("you trying to treat your same city"+city_to_string.at(c));
-}
+// if(c==_c){
+//     throw out_of_range("you trying to treat your same city"+city_to_string.at(c));
+// }
 if(_c!=c){
     throw out_of_range("you cant treat in city that you not at");
 }

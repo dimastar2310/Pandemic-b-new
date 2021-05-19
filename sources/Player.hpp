@@ -12,7 +12,7 @@ namespace pandemic{
         std::unordered_set<City> cards;
         const int total_numofcards = 5;
     public:
-        Player(Board &b, City c, std::string role):_b(b),_c(c),_role(role){} //initializing field via initilize list
+        Player(Board &b, City c):_b(b),_c(c),_role("Player"){} //initializing field via initilize list
         virtual Player&  drive(City c);
         virtual Player& fly_direct(City c);
         virtual Player& fly_charter(City c);
